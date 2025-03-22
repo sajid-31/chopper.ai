@@ -1,0 +1,62 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folder
+venv/
+ENV/
+env/
+.venv/
+
+# macOS system files
+.DS_Store
+
+# VS Code settings folder
+.vscode/
+
+# PyCharm settings folder
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Log files
+*.log
+
+# Test coverage reports
+htmlcov/
+.coverage
+.coverage.*
+
+# MyPy, Pylint, Bandit etc. reports
+.mypy_cache/
+.pylint.d/
+bandit.json
+
+# Distribution / Packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Installer logs
+pip-log.txt
+
+# Unit test cache
+.pytest_cache/
+
+# Environment variables or secret files
+.env
+*.env
+.env.*
+
+# Database or local storage
+*.sqlite3
+*.db
+
+# Compiled C files (if using C extensions)
+*.so
+
+# Node modules (if frontend involved)
+node_modules/
