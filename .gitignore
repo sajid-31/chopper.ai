@@ -49,7 +49,6 @@ pip-log.txt
 # Environment variables or secret files
 .env
 *.env
-.env.*
 
 # Database or local storage
 *.sqlite3
