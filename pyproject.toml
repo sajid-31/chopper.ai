@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chopper.ai"
+version = "0.1.0"
+description = "A Terminal-based LLM App"
+authors = [
+    { name = "Mohammed Sajid", email = "sajidm3107@gmail.com" },
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }  # You can adjust license type
+keywords = ["LLM", "Terminal", "AI"]
+
+dependencies = [
+    "python-dotenv",
+    "requests",
+    "urllib3",
+    "psutil",
+    "idna",
+    "dotenv",
+    "charset-normalizer",
+    "certifi",
+    "setuptools"
+]
+
+[project.urls]
+Homepage = "https://github.com/sajid-31/chopper.ai"
+
+[project.scripts]
+chopper = "chopper.main:main"
