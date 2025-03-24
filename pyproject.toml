@@ -23,7 +23,8 @@ dependencies = [
     "dotenv",
     "charset-normalizer",
     "certifi",
-    "setuptools"
+    "setuptools",
+    "cryptography"
 ]
 
 [project.urls]
@@ -31,3 +32,10 @@ Homepage = "https://github.com/sajid-31/chopper.ai"
 
 [project.scripts]
 chopper = "chopper.main:main"
+
+[tool.setuptools]
+packages = ["chopper","chopper.prompts"]
+
+[tool.setuptools.package-data]
+"chopper.prompts" = ["*.txt"]
+

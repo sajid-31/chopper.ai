@@ -5,7 +5,6 @@ class ResponseFormatter:
         self.command_list = []
 
     def format(self, llm_response):
-        # Simple formatting, can be enhanced
         self.command_list = []
         response = llm_response['choices'][0]['message']['content'].strip()
         # print(response)
@@ -25,6 +24,7 @@ class ResponseFormatter:
         elif response['TYPE']=='CONCEPT':
             return response['INFO']
     
+    # used in main.py to get all the commands in a list
     def get_commands(self):
         return self.command_list
            
