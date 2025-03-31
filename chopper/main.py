@@ -1,3 +1,8 @@
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+
 from .ui.terminal_ui import TerminalUI
 from .llm_connector.llm_client import LLMClient
 from .formatter.response_formatter import ResponseFormatter
@@ -7,7 +12,6 @@ from .system_info.system_info_fetcher import fetch_system_info
 from pathlib import Path
 from importlib.resources import files
 from .animations.spinner import Spinner
-import sys
 
 def main():
     print("🔧 CHOPPER.AI Terminal Started!")

@@ -19,11 +19,13 @@ else
     echo "ℹ️  No config directory found at $CONFIG_DIR"
 fi
 
-# Step 3: Remove binary if any residue remains (extra safety, pipx handles this)
-CHOPPER_BIN="$(which chopper 2>/dev/null)"
-if [ -n "$CHOPPER_BIN" ]; then
-    echo "🗑️  Removing leftover binary: $CHOPPER_BIN"
-    rm -f "$CHOPPER_BIN"
+# Step 3: Remove symlink from /usr/local/bin
+CHOPPER_SYMLINK="/usr/local/bin/chopper-cli"
+if [ -L "$CHOPPER_SYMLINK" ]; then
+    echo "🗑️  Removing Chopper AI symlink..."
+    sudo rm -f "$CHOPPER_SYMLINK"
+else
+    echo "ℹ️  No symlink found at $CHOPPER_SYMLINK"
 fi
 
 echo ""
