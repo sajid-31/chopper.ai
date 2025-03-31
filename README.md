@@ -1,5 +1,7 @@
 # Chopper AI - Your Terminal AI Assistant
-![Logo](chopper/assets/logo.jpeg)
+<p>
+<img src="chopper/assets/logo.jpeg" width="250">
+</p>
 
 Welcome to Chopper AI, a powerful AI assistant for your linux terminal! 🚀
 ![](chopper/assets/tutorial.gif)
