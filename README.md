@@ -66,7 +66,7 @@ chmod +x install.sh
 
 Once installed, you can start Chopper AI by running:
 ```
-chopper
+chopper-cli
 ```
 ## Features:
 
