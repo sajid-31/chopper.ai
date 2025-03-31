@@ -54,7 +54,6 @@ chmod +x install.sh
  - Chopper.ai will ask for an API KEY
  - Create a free API KEY at [https://openrouter.ai/settings/keys](https://openrouter.ai/settings/keys) and paste it in the terminal
  - Chopper.ai uses [Fernet Module](https://github.com/pyca/cryptography/blob/main/src/cryptography/fernet.py) to encrypt and decrypt your API Keys and saves it locally.
- - Ask for sudo permission to give execute access to chopper.ai bin file
  - Currently, Chopper.ai uses the [Deepseek-r1: Free Model](https://openrouter.ai/deepseek/deepseek-r1:free)
 
 **What the setup does:**
