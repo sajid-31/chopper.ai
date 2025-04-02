@@ -8,7 +8,6 @@ from .llm_connector.llm_client import LLMClient
 from .formatter.response_formatter import ResponseFormatter
 from .executor.command_chooser import CommandChooser
 from .executor.command_executor import CommandExecutor
-from .system_info.system_info_fetcher import fetch_system_info
 from pathlib import Path
 from importlib.resources import files
 from .animations.spinner import Spinner
